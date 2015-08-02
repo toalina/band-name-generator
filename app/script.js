@@ -36,13 +36,14 @@ $(function() {
     if (adjective) {
       //this will get JSONified via jQuery
       adjectivePost = {word: adjective};
+
       // jQuery POST method, takes a route and a function
       $.post('adjective', adjectivePost, function(response) {
         console.log(response);
         var adjectiveRes = response.message;
         $('#adjectiveRes').text(adjectiveRes);
-
       });
+
       $('input[name=adjective]').val('');
     }
 
@@ -51,16 +52,17 @@ $(function() {
 
     if (verb) {
       //this will get JSONified via jQuery
+
       verbPost = {word: verb};
+
       // jQuery POST method, takes a route and a function
       $.post('verb', verbPost, function(response) {
         console.log(response);
         var verbRes = response.message;
         $('#verbRes').text(verbRes);
-
       });
-      $('input[name=verb]').val('');
 
+      $('input[name=verb]').val('');
     }
 
     var noun = $('input[name=noun]').val();
@@ -69,24 +71,15 @@ $(function() {
     if (noun) {
       //this will get JSONified via jQuery
       nounPost = {word: noun};
+
       // jQuery POST method, takes a route and a function
       $.post('noun', nounPost, function(response) {
         console.log(response);
         var nounRes = response.message;
         $('#nounRes').text(nounRes);
-
       });
+
       $('input[name=noun]').val('');
-
     }
-
   });
-
 });
-
-
-
-
-
-
-
