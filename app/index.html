@@ -1,0 +1,76 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alina's Band Name Generator</title>
+    <!-- Custom Stylesheet -->
+    <style>
+      body {
+        margin: 50px;
+        font-family: helvetica;
+        background-color: orange;
+        color: white;
+      }
+      button {
+        margin: 10px auto;
+        display: block;
+        padding: 10px;
+      }
+      h1, h3 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        font-size: 36px;
+      }
+      label, input {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+      }
+      #adjective, #verb, #noun {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Alina's Random Band Name Generator</h1>
+    <button id="name">
+      Get Band Name
+    </button>
+
+    <div id="display">
+      <p>Your Band Name:
+        <span id="adjective"></span>
+        <span id="verb"></span>
+        <span id="noun"></span>
+      </p>
+    </div>
+
+    <div id="form">
+      <h3>Submit words for band name generator!</h3>
+      <form id="submitWords">
+        <label>Give us an adjective:</label>
+        <input type="text" name="adjective" placeholder="Adjective"/>
+        <!-- <input type="submit" value="Submit Words"/> -->
+
+        <label>Give us an -ing verb:</label>
+        <input type="text" name="verb" placeholder="Verb"/>
+        <!-- <input type="submit" value="Submit Words"/> -->
+
+        <label>Give us a noun:</label>
+        <input type="text" name="noun" placeholder="Noun"/>
+        <input type="submit" value="Submit Words"/>
+
+      </form>
+    </div>
+
+    <div><p id="adjectiveRes"></p></div>
+    <div><p id="verbRes"></p></div>
+    <div><p id="nounRes"></p></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
