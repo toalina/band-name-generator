@@ -73,5 +73,5 @@ app.post('/noun', function(req, res) {
 });
 
 app.listen(port, function() {
-  console.log('server started on port ' + port);
+  console.log('server for Alina Bandnamegenerator started on port ' + port);
 });
