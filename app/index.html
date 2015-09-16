@@ -1,9 +1,10 @@
 <!DOCTYPE html5>
-<html>
+<html class="no-js" lang="">
   <head>
     <meta charset="UTF-8">
     <title>Alina's Band Name Generator</title>
-    <!-- Custom Stylesheet -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
@@ -11,7 +12,6 @@
     <button id="name">
       Get Band Name
     </button>
-
     <div id="display">
       <p>Your Band Name:
         <span id="adjective"></span>
@@ -19,30 +19,21 @@
         <span id="noun"></span>
       </p>
     </div>
-
     <div id="form">
       <h3>Submit words for band name generator!</h3>
       <form id="submitWords">
         <label>Give us an adjective:</label>
         <input type="text" name="adjective" placeholder="Adjective"/>
-        <!-- <input type="submit" value="Submit Words"/> -->
-
         <label>Give us an -ing verb:</label>
         <input type="text" name="verb" placeholder="Verb"/>
-        <!-- <input type="submit" value="Submit Words"/> -->
-
         <label>Give us a noun:</label>
         <input type="text" name="noun" placeholder="Noun"/>
         <input type="submit" value="Submit Words"/>
-
       </form>
     </div>
-
     <div><p id="adjectiveRes"></p></div>
     <div><p id="verbRes"></p></div>
     <div><p id="nounRes"></p></div>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>

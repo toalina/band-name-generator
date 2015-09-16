@@ -1,26 +1,33 @@
 body {
-  margin: 50px;
-  font-family: helvetica;
-  background-color: orange;
+  margin: calc(5% - 1em);
+  font-family: Futura, sans-serif;
+  background-color: #FF6347;
   color: white;
 }
-button {
-  margin: 10px auto;
+button, input[type="submit"] {
+  margin: 1em auto;
   display: block;
-  padding: 10px;
+  padding: 1em;
+  border: none;
+  background-color: #ffbf47;
+  color: white;
+}
+button:hover, input[type="submit"]:hover {
+  background-color: #47e3ff;
+  cursor: crosshair;
 }
 h1, h3 {
   text-align: center;
 }
 p {
   text-align: center;
-  font-size: 36px;
+  font-size: 2em;
 }
 label, input {
   display: block;
-  margin: 10px auto;
+  margin: 0.5em auto;
   text-align: center;
 }
 #adjective, #verb, #noun {
-  color: black;
+  color: #200500;
 }
